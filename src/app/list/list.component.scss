@@ -1,0 +1,31 @@
+.list{
+    width: 500px;
+margin: auto;
+font-family: 'Gochi Hand', cursive;
+font-family: 'Patrick Hand', cursive;
+font-size: 23px;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+.title, .form{
+    text-align: center;
+}
+.container{
+    max-width: 600px;
+    background-color:lightcyan;
+    padding: 30px;
+    border-radius: 30px;
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+.btn{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px 6px;
+}
+
+
+

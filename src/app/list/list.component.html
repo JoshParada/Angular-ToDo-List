@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="title">
+        <h1>{{name}}'s To-Do List</h1>
+        <label for="todo">What do I need to do?</label>
+    </div>
+    <div class="form">
+        <input #todo (keyup.enter)="addItem(todo.value)" />
+        <button class="btn btn-primary" (click)="addItem(todo.value)">Add Item</button>
+        <p>I need to do:</p>
+    </div>
+    <div class="list">
+        
+        <ul>
+            <li #todoItem *ngFor="let item of todoArr" [ngClass]="item.completed? 'completed' : ''">{{item.todo}}
+                <div><button class="btn btn-success" (click)="isCompleted(todoItem.innerHTML)">Completed</button>
+                    <button class="btn btn-danger" (click)="removeItem(todoItem.innerHTML)">Remove</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+</div>
